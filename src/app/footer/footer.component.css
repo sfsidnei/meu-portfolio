@@ -1,0 +1,8 @@
+.footer {
+    padding: 20px;
+    align-items: center;
+}
+
+.footer .box p {
+    font-size: var(--font-size-5);
+}

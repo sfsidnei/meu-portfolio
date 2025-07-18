@@ -1,8 +1,10 @@
-/* box banner */
+
+/* BANNER */
+
 .banner {
     display: flex;
     justify-content: center;
-    background: linear-gradient(180deg, var(--color-blue-2) 15%, var(--color-blue-3)100%);
+    background: linear-gradient(180deg, var(--color-blue-2) 15%, var(--color-blue-3) 100%);
     color: #fff;
     padding-top: 70px;
     text-align: center;
@@ -12,19 +14,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 45px 5px;
+    padding: 45px 5px
 }
 
 .banner .box .paragraph {
-    margin: 15px;
+    margin: 15px 0;
     font-size: var(--font-size-5);
-    font-weight: 400px;
-    color: #fff;
+    font-weight: 400;
+    color: #fff
 }
 
 .banner .box .title1 {
     font-size: var(--font-size-3);
-    
 }
 
 .banner .box .title2 {
@@ -39,7 +40,7 @@
     flex-wrap: wrap;
     margin: 15px 0;
     width: 100%;
-    justify-content:space-evenly;
+    justify-content: space-evenly;
 }
 
 .banner .box .buttons a {
@@ -54,17 +55,18 @@
     font-weight: 700;
     background: var(--color-blue-1);
     color: #fff;
+    text-wrap: nowrap
 }
 
-.banner .box .buttons a :hover {
-    background-color: var(--color-blue-2);
+.banner .box .buttons a:hover {
+    background: var(--color-blue-2);
 }
 
-.banner .box .banner .buttons button a i {
-    margin-right: 5px;
+.banner .box .buttons button i {
+    margin-right: 5px
 }
 
-/* box about */
+/* ABOUT */
 
 .about .box {
     display: flex;
@@ -78,7 +80,7 @@
 
 .about .box .img img {
     width: 240px;
-    border-radius: 50%;
+    border-radius: 50%
 }
 
 .about .box .text {
@@ -88,40 +90,40 @@
 .about .box .text h3 {
     color: var(--color-blue-2);
     margin-top: 15px;
-} 
+}
 
 .about .box .text p {
     margin: 15px 0;
-    text-align: justify;
+    text-align: justify
 }
 
 .about .box .text a {
     color: var(--color-pink-1);
-    font-weight: 400;
+    font-weight: 400
 }
 
-/* box skills */
+/* SKILLS */
 
 .skills {
-    background-color:var(--color-black-1);
+    background: var(--color-black-1);
 }
 
 .skills .box h2,
 .skills .box h3,
 .skills .box h4 {
-    color: #fff;
+    color: #fff
 }
 
 .skills .box h3 {
     margin: 5px 0 20px;
-    font-size: var(--font-size-4);
+    font-size: var(--font-size-4)
 }
 
 .skills .box .items {
     display: flex;
     flex-wrap: wrap;
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 900px
 }
 
 .skills .box .items .skill {
@@ -130,51 +132,50 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center
 }
 
-.skills .box .skill:hover {
+.skills .box .items .skill:hover {
     background: #ffffff1f;
 }
 
 .skills .box .items .skill img,
 .skills .box .items .skill svg {
-    width: 90px;
-
+    width: 90px
 }
 
 .skills .box .items .skill h4 {
-   margin-top: 15px;    
+    margin-top: 15px
 }
 
-    /* box projects */
+/* PROJECTS */
 
-    .projects .box h3 {
-        margin: 5px 0 20px;
-        font-size: var(--font-size-4);
-    }
+.projects .box h3 {
+    margin: 5px 0 20px;
+    font-size: var(--font-size-4)
+}
 
-    .projects .box .project {
-        display: flex;
-        flex-direction: column;
-        margin: 50px;
-    }
+.projects .box .project {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0
+}
 
-    .projects .box .project.reverse {
+.projects .box .project.reverse {
     flex-direction: column-reverse;
 }
 
 .projects .box .project .img {
-    flex: 1;
+    flex: 1
+}
+
+.projects .box .project .img img {
+    width: 100%
 }
 
 .projects .box .project .text {
     flex: 1;
-    margin: 15px;
-}
-
-.projects .box .project .img img {
-    width: 100%;
+    margin-bottom: 15px
 }
 
 .projects .box .project .text h4 {
@@ -182,9 +183,9 @@
     margin-bottom: 15px;
 }
 
-.projects .box .project .text .buttons{
+.projects .box .project .text .buttons {
     margin-top: 20px;
-    display: flex;
+    display: flex
 }
 
 .projects .box .project .text .buttons a {
@@ -198,7 +199,6 @@
     font-size: var(--font-size-5);
     font-weight: 400;
     align-items: center;
-
 }
 
 .projects .box .project .text .buttons a.live {
@@ -206,13 +206,64 @@
 }
 
 .projects .box .project .text .buttons a svg,
-.projects .box .project .text .buttons a i {
+i {
     width: 20px;
     margin-right: 8px;
-    font-size: 20px;
+    font-size: 20px
 }
-   
+
+/* CONTACT */
+.contact {
+    background: var(--color-black-1);
+}
+
+.contact .box {
+    max-width: 800px;
+}
+
+.contact .box h2, 
+.contact .box h3 {
+    color: #fff
+}
+
+.contact .box .contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 25px 0
+}
+
+.contact .box .contacts a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: var(--color-pink-1);
+    height: 50px;
+    color: #fff;
+    border-radius: 45px;
+    min-width: 200px;
+    font-weight: 700;
+    margin: 15px 0
+}
+
+.contact .box .contacts a:hover {
+    background: #f42771bf;;
+}
+
+.contact .box .contacts a span {
+    font-size: 35px;
+    margin-right: 5px
+}
+
+.contact .box .contacts a svg {
+    width: 30px;
+    margin-right: 5px
+}
+
+
 @media (min-width: 768px) {
+
     .about .box {
         flex-direction: row;
     }
@@ -231,13 +282,15 @@
 
     .skills .box .items .skill img,
     .skills .box .items .skill svg {
-        width: 120px;
+        width: 120px
     }
 
     .projects .box .project,
     .projects .box .project.reverse {
+        flex-direction: row
+    }
+
+    .contact .box .contacts {
         flex-direction: row;
     }
-
-    }
-
+}
